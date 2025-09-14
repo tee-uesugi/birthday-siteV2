@@ -66,3 +66,11 @@ img { max-width: 100%; border-radius: 10px; }
   margin: 20px auto;            /* จัดกลางหน้า */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* เงานิด ๆ */
 }
+
+canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 2000 !important;
+  pointer-events: none !important;
+}

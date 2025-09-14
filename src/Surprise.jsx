@@ -16,9 +16,32 @@ function Surprise() {
   const audioRef = useRef(null);
 
   const message = `สุขสันต์วันเกิดนะ\nขอให้ปีนี้เป็นปีที่ดีของเธอ\nขอให้มีแต่รอยยิ้ม มีแต่พลังบวกนะ\nผมจะอยู่ข้างๆแบบนี้ตลอดไปนะ ยินดีที่ได้รู้จักนะ ❤️`;
+
+  const fireConfetti = () => {
+    const defaults = {
+      spread: 120,
+      startVelocity: 50,
+      gravity: 0.7,
+      scalar: 1.2,
+      ticks: 150,
+      origin: { y: 0.7 }
+    };
+  
+    function shoot() {
+      confetti({ ...defaults, particleCount: 50, colors: ['#ff6b6b','#feca57','#48dbfb','#1dd1a1'] });
+      confetti({ ...defaults, particleCount: 30, scalar: 1.6 });
+      confetti({ ...defaults, particleCount: 20, scalar: 2, shapes: ['circle'] });
+    }
+  
+    shoot();
+    setTimeout(shoot, 300);
+    setTimeout(shoot, 600);
+  };
+  
   
   const handleClick = () => {
-    confetti({ particleCount: 200, spread: 90, origin: { y: 0.6 } });
+    // confetti({ particleCount: 200, spread: 90, origin: { y: 0.6 } });
+    fireConfetti();
     audioRef.current?.play();
     setShowPopup(true);
   };
