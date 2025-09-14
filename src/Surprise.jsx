@@ -17,7 +17,7 @@ function Surprise() {
   const [showPopup, setShowPopup] = useState(false);
   const audioRef = useRef(null);
 
-  const message = `สุขสันต์วันเกิดนะ\nขอให้ปีนี้เป็นปีที่ดีของเธอ\nขอให้มีแต่รอยยิ้ม มีแต่พลังบวกนะ\nผมจะอยู่ข้างๆแบบนี้ตลอดไปนะ ยินดีที่ได้รู้จักนะ ❤️`;
+  const message = `สุขสันต์วันเกิดนะ\nขอให้ปีนี้เป็นปีที่ดีของเธอ\nขอให้มีแต่รอยยิ้ม มีแต่พลังบวกนะ\nผมจะอยู่ข้างๆแบบนี้ตลอดไปนะ \nยินดีที่ได้รู้จักนะ ❤️`;
 
   const fireConfetti = () => {
     const defaults = {

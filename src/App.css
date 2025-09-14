@@ -1,70 +1,117 @@
 body {
   margin: 0;
   background: linear-gradient(to top right, #ffe6f0, #ffe6cc);
-  font-family: 'Noto Sans Thai', 'Segoe UI', sans-serif;
+  font-family: "Noto Sans Thai", "Segoe UI", sans-serif;
   text-align: center;
   overflow-x: hidden;
 }
 
-h1 { margin-top: 20px; }
-.card { perspective: 1000px; margin-top: 30px; }
+h1 {
+  margin-top: 20px;
+}
+.card {
+  perspective: 1000px;
+  margin-top: 30px;
+}
 .inner-card {
-  width: 300px; height: 200px; margin: auto;
-  transform-style: preserve-3d; transition: transform 1s;
-  cursor: pointer; position: relative;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  cursor: pointer;
+  position: relative;
 }
-.inner-card.flip { transform: rotateY(180deg); }
+.inner-card.flip {
+  transform: rotateY(180deg);
+}
 .face {
-  position: absolute; width: 100%; height: 100%;
-  backface-visibility: hidden; border: 2px solid #ff66a3;
-  border-radius: 12px; padding: 20px; box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 2px solid #ff66a3;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
   display: flex;
-  justify-content: center;   /* จัดกลางแนวนอน */
-  align-items: center;       /* จัดกลางแนวตั้ง */
-  text-align: center;        /* จัดข้อความให้อยู่กลางบรรทัด */
+  justify-content: center; /* จัดกลางแนวนอน */
+  align-items: center; /* จัดกลางแนวตั้ง */
+  text-align: center; /* จัดข้อความให้อยู่กลางบรรทัด */
 }
-.front { background: #fff0f5; }
-.back { background: #ffe6f0; transform: rotateY(180deg); }
-.section { padding: 40px 20px; }
-img { max-width: 100%; border-radius: 10px; }
+.front {
+  background: #fff0f5;
+}
+.back {
+  background: #ffe6f0;
+  transform: rotateY(180deg);
+}
+.section {
+  padding: 40px 20px;
+}
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
 .loveText {
-  font-size: 20px; color: #c71585;
-  white-space: pre-wrap; max-width: 600px; margin: auto;
+  font-size: 20px;
+  color: #c71585;
+  white-space: pre-wrap;
+  max-width: 600px;
+  margin: auto;
 }
 .confetti-button {
-  margin-top: 20px; background: #ff66a3; color: white;
-  padding: 12px 24px; font-size: 18px;
-  border: none; border-radius: 8px; cursor: pointer;
+  margin-top: 20px;
+  background: #ff66a3;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 .popup-modal {
-  display: flex; justify-content: center; align-items: center;
-  position: fixed; z-index: 999; left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .popup-content {
-  background: white; padding: 20px;
+  background: white;
+  padding: 20px;
   object-fit: contain;
-  border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  max-width: 90%; max-height: 120%;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  max-width: 90%;
+  max-height: 120%;
 }
-.popup-content img { width: 100%; border-radius: 12px; }
+.popup-content img {
+  width: 100%;
+  border-radius: 12px;
+}
 
 .slide-image {
-  width: 100%; height: 50%;
-  object-fit: cover;          /* ครอบภาพพอดีกรอบ */
-  border: 4px solid #ff99cc;  /* สีกรอบหวาน ๆ */
+  width: 100%;
+  height: 50%;
+  object-fit: cover; /* ครอบภาพพอดีกรอบ */
+  border: 4px solid #ff99cc; /* สีกรอบหวาน ๆ */
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .loveText-container {
-  background-color: pink;      /* พื้นหลังสีขาว */
-  padding: 1px;                /* เว้นขอบด้านใน */
-  border-radius: 16px;          /* ขอบมนสวย ๆ */
-  max-width: 300px;             /* ความกว้างไม่เกิน */
-  margin: 20px auto;            /* จัดกลางหน้า */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* เงานิด ๆ */
+  background-color: pink; /* พื้นหลังสีขาว */
+  padding: 1px; /* เว้นขอบด้านใน */
+  border-radius: 16px; /* ขอบมนสวย ๆ */
+  max-width: 300px; /* ความกว้างไม่เกิน */
+  margin: 20px auto; /* จัดกลางหน้า */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* เงานิด ๆ */
 }
 
 canvas {
@@ -82,4 +129,3 @@ canvas {
   text-align: center;
   font-weight: bold;
 }
-

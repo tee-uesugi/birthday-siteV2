@@ -1,7 +1,7 @@
-import React from 'react';
-import { createBrowserRouter } from 'react-router-dom';
-import App from './App';
-import Surprise from './Surprise';
+import React from "react";
+import { createBrowserRouter } from "react-router-dom";
+import App from "./App";
+import Surprise from "./Surprise";
 
 const router = createBrowserRouter([
   {
@@ -11,7 +11,7 @@ const router = createBrowserRouter([
   {
     path: "/surprise",
     element: <Surprise />,
-  }
+  },
 ]);
 
 export default router;
