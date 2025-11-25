@@ -5,7 +5,7 @@ import Surprise from "./Surprise1";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/HappyBirthdayMind)",
     element: <App />,
   },
   {
