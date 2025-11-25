@@ -125,7 +125,7 @@ function Surprise() {
                 <Typewriter
                   words={["ยินดีที่ได้รู้จักนะครับ"]}
                   loop={1}
-                  cursor
+                  cursor 
                   typeSpeed={100}
                 />
               </div>

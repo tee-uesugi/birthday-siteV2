@@ -107,7 +107,7 @@ img {
 }
 
 .loveText-container {
-  background-color: pink; /* พื้นหลังสีขาว */
+  background-color: pink; 
   padding: 1px; /* เว้นขอบด้านใน */
   border-radius: 16px; /* ขอบมนสวย ๆ */
   max-width: 300px; /* ความกว้างไม่เกิน */
