@@ -4,7 +4,7 @@ import Cake3D from "./components/Cake3D";
 import fireConfetti from "./components/ConfettiEffect";
 import { Typewriter } from "react-simple-typewriter";
 import birthdayPersonImg from "./assets/images/momay.png"; // รูปเจ้าของวันเกิด
-import flowerImg from "./assets/images/momayWithFlower.png"; // รูป popup
+import flowerImg from "./assets/images/c.png"; // รูป popup
 import useAudio from "./hooks/useAudio";
 import backgroundSong from "./assets/music/HBD2.mp3";
 import popupSong from "./assets/music/song1.mp3";
@@ -134,7 +134,7 @@ export default function Surprise() {
 
             <div style={{ fontSize: "1.2rem", color: "#333" }}>
               <Typewriter
-                words={["ให้ที่รักครับ เห็นบอกอยากได้"]}
+                words={["ให้คนที่ยิ้มน่ารักที่สุดดดดด"]}
                 loop={1}
                 cursor
                 typeSpeed={100}

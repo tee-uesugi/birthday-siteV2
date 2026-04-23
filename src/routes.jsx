@@ -1,7 +1,7 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App1";
-import Surprise from "./Surprise1";
+import Surprise from "./Surprise";
 
 const router = createBrowserRouter([
   {

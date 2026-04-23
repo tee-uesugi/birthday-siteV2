@@ -17,7 +17,7 @@ function Surprise() {
   const [showPopup, setShowPopup] = useState(false);
   const audioRef = useRef(null);
 
-  const message = `สุขสันต์วันเกิดนะ\nขอให้ปีนี้เป็นปีที่ดีของเธอ\nขอให้มีแต่รอยยิ้ม มีแต่พลังบวกนะ\nผมจะอยู่ข้างๆแบบนี้ตลอดไปนะ \nยินดีที่ได้รู้จักนะ ❤️`;
+  const message = `ยินดีที่ได้รู้จักนะ\nขอบคุณที่ทำให้ชีวิตเค้ามีความสดใสนะ\nอยากให้ยิ้มบ่อยๆนะ เพราะหน้าบูดละน่ากลัว\nอยากหอมแก้มจัง \nจะอยู่ข้างๆเตงไปตลอดเลยนะ🫶🏻`;
 
   const fireConfetti = () => {
     const defaults = {
@@ -69,7 +69,7 @@ function Surprise() {
     >
       <div className="background-image">
         <div className="loveText-container">
-          <h1>🎂 สุขสันต์วันเกิดนะ 🎉</h1>
+          <h1>ข้อความถึงคนน่ารัก</h1>
         </div>
         {/* <div className="card" onClick={() => document.getElementById('cardInner').classList.toggle('flip')}>
         <div className="inner-card " id="cardInner">
@@ -118,7 +118,7 @@ function Surprise() {
         {showPopup && (
           <div className="popup-modal" onClick={() => setShowPopup(false)}>
             <div className="popup-content">
-              <img src="/assets/images/white-red-flowers.jpg" alt="ช่อดอกไม้" />
+              <img src="/assets/images/white-red-flowers1.png" alt="ช่อดอกไม้" />
 
               {/* เพิ่มข้อความ Typewriter ใต้รูป */}
               <div className="popup-message">

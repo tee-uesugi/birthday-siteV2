@@ -12,7 +12,7 @@ export default function QuestionScreen({ onCorrect }) {
   };
 
   const handleClick = (choice) => {
-    if (choice === "momay") {
+    if (choice === "Chompoo") {
       onCorrect();
     } else {
       handleHover(); // ปุ่ม Mind หลบเมื่อกดผิด
@@ -66,12 +66,12 @@ export default function QuestionScreen({ onCorrect }) {
             transition: "all 0.25s ease",
           }}
         >
-          Mind
+          Chompoo
         </button>
 
         {/* ปุ่ม Momay */}
         <button
-          onClick={() => handleClick("momay")}
+          onClick={() => handleClick("Chompoo")}
           style={{
             position: "absolute",
             top: "50%",
@@ -89,7 +89,7 @@ export default function QuestionScreen({ onCorrect }) {
             transition: "all 0.25s ease",
           }}
         >
-          Momay
+          Nami
         </button>
       </div>
     </div>
