@@ -17,7 +17,7 @@ function Surprise() {
   const [showPopup, setShowPopup] = useState(false);
   const audioRef = useRef(null);
 
-  const message = `ยินดีที่ได้รู้จักนะ\nขอบคุณที่ทำให้ชีวิตเค้ามีความสดใสนะ\nอยากให้ยิ้มบ่อยๆนะ เพราะหน้าบูดละน่ากลัว\nอยากหอมแก้มจัง \nจะอยู่ข้างๆเตงไปตลอดเลยนะ🫶🏻`;
+  const message = `อยากไปเจอแต่ยังไปเจอไม่ได้\nเห็นบอกชอบคนทำอะไรที่มันคาฟๆให้\nเลยอยากลองทำให้บ้าง\nแล้วชอบบ้างยังอะ😛`;
 
   const fireConfetti = () => {
     const defaults = {
@@ -69,7 +69,7 @@ function Surprise() {
     >
       <div className="background-image">
         <div className="loveText-container">
-          <h1>ข้อความถึงคนน่ารัก</h1>
+          <h1>ให้คนที่ยิ้มน่ารักที่สุดดดด</h1>
         </div>
         {/* <div className="card" onClick={() => document.getElementById('cardInner').classList.toggle('flip')}>
         <div className="inner-card " id="cardInner">
@@ -88,11 +88,11 @@ function Surprise() {
           <button className="confetti-button" onClick={handleClick}>
             กดสิ! มีอะไรจะให้ 💝
           </button>
-          <audio ref={audioRef} src="/assets/music/song.mp3" />
+          <audio ref={audioRef} src="/assets/music/song1.mp3" />
         </div>
 
         <div className="section">
-          <h2>📸 รูปที่โครตจะน่ารักกก</h2>
+          <h2>หมวยหน้าเหวี่ยงยิ้มหวาน</h2>
           <Swiper
             modules={[Autoplay, Navigation, Pagination]}
             loop={true}
@@ -123,7 +123,7 @@ function Surprise() {
               {/* เพิ่มข้อความ Typewriter ใต้รูป */}
               <div className="popup-message">
                 <Typewriter
-                  words={["ยินดีที่ได้รู้จักนะครับ"]}
+                  words={["ให้ดอกไม้ แถม 🤍"]}
                   loop={1}
                   cursor 
                   typeSpeed={100}

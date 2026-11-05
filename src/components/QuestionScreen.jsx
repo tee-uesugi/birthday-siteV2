@@ -66,7 +66,7 @@ export default function QuestionScreen({ onCorrect }) {
             transition: "all 0.25s ease",
           }}
         >
-          Chompoo
+          Misa
         </button>
 
         {/* ปุ่ม Momay */}
@@ -89,7 +89,7 @@ export default function QuestionScreen({ onCorrect }) {
             transition: "all 0.25s ease",
           }}
         >
-          Nami
+          Banjo
         </button>
       </div>
     </div>
